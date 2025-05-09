@@ -1,0 +1,122 @@
+body {
+    font-family: 'SF Mono', monospace, sans-serif; /* فونت مدرن‌تر */
+    background-color: #1e1e1e; /* خاکستری تیره */
+    color: #d4d4d4; /* خاکستری روشن */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.terminal {
+    background-color: #282c34; /* پس‌زمینه تیره‌تر و مدرن‌تر */
+    border-radius: 8px; /* لبه‌های گردتر */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* سایه قوی‌تر */
+    width: 85%; /* کمی پهن‌تر */
+    max-width: 900px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #3e4451; /* حاشیه ظریف */
+}
+
+.terminal-header {
+    background-color: #3e4451; /* رنگ هدر تیره‌تر */
+    color: #abb2bf; /* خاکستری روشن‌تر برای متن هدر */
+    padding: 12px 20px; /* padding بیشتر */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #5c6370; /* خط جداکننده تیره‌تر */
+}
+
+.terminal-title {
+    flex-grow: 1;
+    font-size: 1.1em; /* اندازه فونت بزرگتر */
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 10px; /* فاصله بیشتر بین دکمه‌ها */
+}
+
+.terminal-button {
+    width: 14px; /* اندازه بزرگتر */
+    height: 14px;
+    border-radius: 50%;
+    opacity: 0.8; /* کمی شفاف‌تر */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.terminal-button:hover {
+    opacity: 1;
+}
+
+.terminal-button.close {
+    background-color: #e06c75; /* قرمز ملایم‌تر */
+}
+
+.terminal-button.minimize {
+    background-color: #e5c07b; /* زرد ملایم‌تر */
+}
+
+.terminal-button.maximize {
+    background-color: #98c379; /* سبز ملایم‌تر (در صورت نیاز می‌توانید تغییر دهید) */
+}
+
+.terminal-body {
+    padding: 20px; /* padding بیشتر */
+    font-size: 0.95em; /* اندازه فونت کمی بزرگتر */
+    line-height: 1.6; /* فاصله خطوط بیشتر */
+    overflow-y: auto;
+}
+
+.line {
+    margin-bottom: 10px; /* فاصله بیشتر بین خطوط */
+}
+
+.prompt {
+    color: #61afef; /* آبی روشن‌تر */
+    font-weight: bold;
+}
+
+.command {
+    color: #c678dd; /* بنفش ملایم */
+}
+
+.output {
+    margin-left: 2.5em; /* تورفتگی بیشتر */
+    color: #d4d4d4;
+    white-space: pre-wrap;
+}
+
+.about-me {
+    color: #98c379; /* سبز ملایم‌تر */
+}
+
+.skills {
+    color: #e6b854; /* نارنجی ملایم */
+}
+
+.contact {
+    color: #c678dd; /* بنفش ملایم */
+}
+
+.cursor-line {
+    display: flex;
+    align-items: center;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.8em; /* پهنای بیشتر */
+    height: 1.1em; /* ارتفاع بیشتر */
+    background-color: #d4d4d4;
+    animation: blink-caret 0.75s step-end infinite;
+    margin-left: 0.4em; /* فاصله بیشتر */
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent }
+    50% { background-color: #d4d4d4; }
+}
