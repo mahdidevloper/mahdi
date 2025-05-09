@@ -87,7 +87,7 @@ body {
 .output {
     /* margin-left: 2.5em; تورفتگی بیشتر */
     color: #d4d4d4;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .about-me {
