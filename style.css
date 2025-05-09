@@ -53,21 +53,21 @@ body {
 }
 
 .terminal-button.close {
-    background-color: #e06c75; /* قرمز ملایم‌تر */
+    background-color: #f01527; /* قرمز ملایم‌تر */
 }
 
 .terminal-button.minimize {
-    background-color: #e5c07b; /* زرد ملایم‌تر */
+    background-color: #ffee37; /* زرد ملایم‌تر */
 }
 
 .terminal-button.maximize {
-    background-color: #98c379; /* سبز ملایم‌تر (در صورت نیاز می‌توانید تغییر دهید) */
+    background-color: #6aff00; /* سبز ملایم‌تر (در صورت نیاز می‌توانید تغییر دهید) */
 }
 
 .terminal-body {
     padding: 20px; /* padding بیشتر */
     font-size: 0.95em; /* اندازه فونت کمی بزرگتر */
-    line-height: 1.6; /* فاصله خطوط بیشتر */
+    line-height: 2; /* فاصله خطوط بیشتر */
     overflow-y: auto;
 }
 
@@ -85,9 +85,9 @@ body {
 }
 
 .output {
-    margin-left: 2.5em; /* تورفتگی بیشتر */
+    /* margin-left: 2.5em; تورفتگی بیشتر */
     color: #d4d4d4;
-    white-space: pre-wrap;
+    white-space: normal;
 }
 
 .about-me {
